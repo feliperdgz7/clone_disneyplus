@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const heroSection = document.querySelector('.hero');
     const heightHero = heroSection.clientHeight;
 
+
+    //Header
     window.addEventListener('scroll', function(){
         const positionCurrent = window.scrollY;
 
@@ -34,11 +36,13 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
+//Hide Element Header
 function hideHeaderElements(){
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }
 
+//Show Element Header
 function displayHeaderElements(){
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
